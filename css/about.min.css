@@ -1,0 +1,485 @@
+a:focus, a:hover {
+    text-decoration: none;
+    outline: 0
+}
+
+.vessel {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.dn {
+    display: none
+}
+
+.f16 {
+    font-size: 16px
+}
+
+.mt50 {
+    margin-top: 50px
+}
+
+.mt100 {
+    margin-top: 100px
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.tc {
+    text-align: center
+}
+
+.about-head {
+    position: relative
+}
+
+.ah-nav {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 1200px;
+    border: 1px solid #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -600px;
+    margin-bottom: -50px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 20px 2px #f0f0f0;
+    box-shadow: 0 0 20px 2px #f0f0f0
+}
+
+.ah-nav .ah-nav-item {
+    float: left;
+    width: 33.3333333333333%
+}
+
+.ah-nav .ah-nav-item > a {
+    display: block;
+    padding: 0 100px
+}
+
+.ah-nav .ah-nav-item > a:focus, .ah-nav .ah-nav-item > a:hover {
+    color: #23527c
+}
+
+.ah-nav-icon {
+    display: inline-block;
+    width: 46px;
+    height: 40px;
+    margin-top: 15px;
+    background-repeat: no-repeat
+}
+
+.ah-nav-icon1 {
+    background-image: url(https://sitecdn.sdongpo.com/website/about/about_nav_icon1.png)
+}
+
+.ah-nav-icon2 {
+    background-image: url(https://sitecdn.sdongpo.com/website/about/about_nav_icon2.png)
+}
+
+.ah-nav-icon3 {
+    background-image: url(https://sitecdn.sdongpo.com/website/about/about_nav_icon3.png)
+}
+
+.ah-nav .active .ah-nav-icon1, .ah-nav .ah-nav-item > a:hover .ah-nav-icon1 {
+    background-image: url(https://sitecdn.sdongpo.com/website/about/about_nav_active1.png)
+}
+
+.ah-nav .active .ah-nav-icon2, .ah-nav .ah-nav-item > a:hover .ah-nav-icon2 {
+    background-image: url(https://sitecdn.sdongpo.com/website/about/about_nav_active2.png)
+}
+
+.ah-nav .active .ah-nav-icon3, .ah-nav .ah-nav-item > a:hover .ah-nav-icon3 {
+    background-image: url(https://sitecdn.sdongpo.com/website/about/about_nav_active3.png)
+}
+
+.ah-nav .ah-nav-item p {
+    padding: 15px 0;
+    border-bottom: 2px solid transparent
+}
+
+.ah-nav .active p, .ah-nav .ah-nav-item > a:hover p {
+    color: #4894FF !important;
+    border-bottom-color: #2d8feb !important
+}
+
+.md-title {
+    color: #333;
+    text-align: center
+}
+
+.md-title h2 {
+    font-size: 36px
+}
+
+.md-title p {
+    margin-top: 15px;
+    font-size: 16px
+}
+
+.md-title em {
+    display: block;
+    width: 110px;
+    height: 4px;
+    margin: 36px auto 0;
+    background-color: #4894FF
+}
+
+.jb-box {
+    border: 1px solid #f0f0f0
+}
+
+.jb-box li {
+    padding: 0 25px
+}
+
+.jb-box li .jb-title {
+    font-size: 18px;
+    color: #333;
+    line-height: 50px;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.jb-box li .jb-title .jb-sontitle-switch {
+    font-size: 25px;
+    margin-right: 15px
+}
+
+.jb-outer {
+    margin-top: 80px
+}
+
+.jb-son-text {
+    margin: 0 -25px;
+    padding: 25px 55px;
+    background-color: #fafafa;
+    display: none
+}
+
+.jb-son-addr span {
+    font-size: 14px;
+    margin-right: 30px
+}
+
+.jb-son-del h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 15px
+}
+
+.jb-son-del p {
+    color: #666;
+    line-height: 30px
+}
+
+.jb-reason {
+    color: #fff;
+    background: url(https://sitecdn.sdongpo.com/website/about/about_reson_bg.jpg) no-repeat;
+    padding: 80px 0;
+    margin-top: 70px;
+    margin-bottom: 30px
+}
+
+.jb-reason h2 {
+    font-size: 40px;
+    margin-bottom: 40px
+}
+
+.jb-reason p {
+    font-size: 14px;
+    line-height: 30px
+}
+
+.jb-reason .join-in {
+    margin-top: 60px;
+    margin-bottom: 30px
+}
+
+.jb-reason h3 {
+    font-size: 24px;
+    margin-bottom: 30px
+}
+
+.jb-reason .email {
+    display: inline-block;
+    font-size: 24px;
+    background: #1767af;
+    padding: 15px 25px;
+    border-radius: 100px
+}
+
+.company-intro {
+    padding-top: 120px
+}
+
+.ci-inner .ci-left-pic {
+    width: 300px;
+    height: auto;
+    float: left
+}
+
+.ci-inner .ci-left-pic img {
+    width: 100%
+}
+
+.ci-inner .ci-right-desc {
+    width: 900px;
+    float: right;
+    padding-left: 30px
+}
+
+.ci-inner .ci-right-desc p {
+    line-height: 25px;
+    margin-bottom: 20px
+}
+
+.no-mar {
+    margin: 0 !important
+}
+
+.ci-point {
+    margin-top: 30px
+}
+
+.ci-point-item {
+    color: #666;
+    padding: 44px 42px;
+    width: 380px;
+    height: 280px;
+    float: left;
+    margin-right: 30px;
+    background: #f8f8f8
+}
+
+.ci-point-item h2 {
+    font-size: 30px;
+    color: #333
+}
+
+.ci-point-item p {
+    line-height: 30px
+}
+
+.ci-point-item .ci-point-eng {
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+
+.patent .patent-banner {
+    overflow: hidden;
+    position: relative
+}
+
+.patent .patent-banner .slide {
+    float: left;
+    font-size: 0
+}
+
+.patent .patent-banner .slide img {
+    width: 33.3333333%
+}
+
+.patent .patent-banner .slider .slides {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all .5s cubic-bezier(.165, .84, .44, 1);
+    -moz-transition: all .5s cubic-bezier(.165, .84, .44, 1);
+    -ms-transition: all .5s cubic-bezier(.165, .84, .44, 1);
+    -o-transition: all .5s cubic-bezier(.165, .84, .44, 1);
+    transition: all .5s cubic-bezier(.165, .84, .44, 1)
+}
+
+.patent .patent-banner .arrowsWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.patent .patent-banner .slider-arrow {
+    position: absolute;
+    top: 40%;
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    color: #666;
+    text-decoration: none;
+    background: #f0f0f0;
+    display: none;
+    line-height: 90px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 20px 2px #f0f0f0;
+    box-shadow: 0 0 20px 2px #f0f0f0
+}
+
+.patent .patent-banner:hover .slider-arrow {
+    display: block
+}
+
+.patent .patent-banner .slider-arrow--right {
+    right: 20px
+}
+
+.patent .patent-banner .slider-arrow--left {
+    left: 20px
+}
+
+.ch-pic {
+    margin-top: 30px
+}
+
+.report {
+    margin-bottom: 110px
+}
+
+.rp-inner .rp-aside {
+    margin-right: 30px;
+    font-size: 14px
+}
+
+.rp-inner .rp-aside, .rp-inner .rp-section {
+    width: 585px;
+    float: left
+}
+
+.rp-aside .rp-new-tit {
+    color: #333;
+    margin-top: 23px;
+    font-weight: 700
+}
+
+.rp-aside p {
+    margin-top: 10px;
+    line-height: 28px;
+    color: #666
+}
+
+.rp-aside p:hover {
+    color: #4894FF
+}
+
+.rp-aside p .more, .rp-section li .rp-new-section p .more {
+    color: #4894FF
+}
+
+.rp-section li {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 30px;
+    margin-bottom: 30px
+}
+
+.rp-section .clear-bot {
+    border-bottom: none;
+    padding: 0;
+    margin: 0
+}
+
+.rp-section li .rp-new-count {
+    float: left
+}
+
+.rp-section li .rp-new-section {
+    color: #666;
+    font-size: 14px;
+    padding-left: 70px
+}
+
+.rp-section li .rp-new-section p {
+    line-height: 25px
+}
+
+.rp-section li .rp-new-section p:hover {
+    color: #4894FF
+}
+
+.rp-section li .rp-new-section .rp-new-tit {
+    color: #333;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.team-video .video-tip {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    display: block;
+    border: 1px solid #e2e2e2;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700
+}
+
+.video-wrap {
+    width: 790px;
+    height: 500px;
+    margin: 0 auto
+}
+
+.gh-sheet .gh-sh-item {
+    float: left;
+    margin-right: 30px;
+    width: 380px
+}
+
+.gh-sheet .gh-sh-item > div {
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0 0 20px 2px #eef1ee;
+    box-shadow: 0 0 20px 2px #eef1ee;
+    padding: 120px 60px 0;
+    height: 340px
+}
+
+.gh-sheet .gh-sh-item h1 {
+    color: #4894FF;
+    font-weight: 700;
+    font-size: 54px
+}
+
+.gh-sheet .gh-sh-item p {
+    color: #333;
+    font-size: 20px;
+    margin-top: 47px
+}
+
+.gh-pic {
+    margin-top: 70px
+}
+
+.gh-pic > div {
+    float: left;
+    width: 50%;
+    height: 324px
+}
+
+.gh-pic .gh-pic-text {
+    background: #f9f9f9;
+    padding: 60px 0 0 35px
+}
+
+.gh-pic .gh-pic-text h2 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px
+}
+
+.gh-pic .gh-pic-text p {
+    color: #666;
+    margin-bottom: 18px
+}
+
+.our-team .team-pic {
+    margin-bottom: 50px
+}

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://sdongpo.com/groupbuy -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="RWJaZ3NjOVU/FCBeNAl8BRMOaQ4KFUEDCSVpVz0RVBI3UTQdRyhbHQ==">
+    <!-- <title>社区团购系统,社区团购小程序,社区团购软件,拼团软件</title> -->
+    <title>社区团购系统软件,社交电商小程序,拼团软件-小方格</title>
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.sdongpo.com/groupbuy">
+    <meta name="mobile-agent" content="format=html5;url=//m.sdongpo.com/groupbuy">
+    <meta name="description" content="小方格社区团购系统，提供完整社区团购解决方案，国内专业做社区团购系统_免费试用">
+    <meta name="keywords" content="社区团购,社区拼团,社区团购系统,社区团购软件,兴盛优选,微信团购,微信拼团,微信如何团购,微信拼团怎么做">
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script charset="utf-8" src="./js/lxb.js"></script>
+    <script type="text/javascript" async="" src="./js/vds.js"></script>
+    <script src="./js/hm.js"></script>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link href="./css/index.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        //获取浏览器版本
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
+        var IEbb = true;
+        if (isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            var fIEVersion = parseFloat(RegExp["$1"]);
+            if(fIEVersion < 9) {
+                IEbb = false;
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div class="header" active>
+    <div>
+        <a class="header__logo" href="http://xfigo.com/"><img src="./img/logo.png" alt="小方格" width="86" height="28"></a>
+        <div class="header__menu">
+            <ul>
+                <div class="gl" style="overflow: hidden; left: 766px; width: 40px;"></div>
+                <li data-target="" class="active"><a href="./index.html">首页</a></li>
+                <li data-target="shicai"><a href="./eshop.html">商城系统</a></li>
+                <li data-target="groupbuy"><a href="./groupbuy.html">社区团购</a></li>
+                <li data-target="processing"><a href="./dispatch.html">订单调度</a></li>
+                <li data-target="movee"><a href="./vipsystem.html">会员系统</a></li>
+                <li data-target="shengxian"><a href="./miniweb.html">微网站</a></li>
+<!--                <li data-target="agency"><a href="./agency.html">软件代理</a></li>-->
+                <li data-target="about"><a href="./contact.html">我们</a></li>
+            </ul>
+        </div>
+        <div class="header__concat"><a onclick="showForm()" href="javascript:;">免费试用</a></div>
+    </div>
+</div>
+
+<div id="wrapper">
+    <div>
+        <div class="groupon">
+            <div class="banner">
+                <div class="banner__img groupon">
+                    <div class="banner__img--text">
+                        <h1 class="caption groupon">小方格社区团购系统</h1>
+                        <h3 class="subtitle groupon">- 专业好用的社区团购软件解决方案 -</h3>
+                        <button class="trial groupon" onclick="showForm()">免费试用</button>
+                    </div>
+                </div>
+            </div>
+            <div class="groupon__species">
+                <h3 class="groupon__species--label">社区团购有什么核心特点和优势？</h3>
+                <ul class="groupon__species--list">
+                    <li>
+                        <img src="./img/cashFlow_1.png" alt="现金流好" width="82" height="82">
+                        <h6>现金流好</h6>
+                        <p>团购以销定采，零库存</p>
+                        <p>低损耗，还可提前收款</p>
+                    </li>
+                    <li>
+                        <img src="./img/quickStart_1.png" alt="快速起步" width="82" height="82">
+                        <h6>快速起步</h6>
+                        <p>去中间环节、省门店租金</p>
+                        <p>低物流成本、超高速扩张</p>
+                    </li>
+                    <li>
+                        <img src="./img/justNeedTo_1.png" alt="高频刚需" width="82" height="82">
+                        <h6>高频刚需</h6>
+                        <p>一日三餐，高频刚性需求</p>
+                        <p>熟人复购，实现快速起量</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="groupon__section">
+                <div class="groupon__section--list">
+                    <div class="items gray">
+                        <div class="wrap__1056">
+                            <h3>小方格社区团购系统，让社区团购创业更简单</h3>
+                            <div class="desc mall">
+                                <h5>会员商城小程序，快速抢占市场</h5>
+                                <p>精美UI界面，便捷下单购买，商城性能流畅，用户体验好</p>
+                                <p>一键转发，图文分享，拉新拓客，实现快速起量</p>
+                                <p>丰富营销活动，秒杀、团购、限时抢购，天天都有新玩法</p>
+                                <p>抓住更多流量，实现规模扩张，先人一步抢占市场</p>
+                                <div onclick="showForm()">免费试用</div>
+                            </div><img src="./img/mall.png" alt="小方格社区团购系统，让社区团购创业更简单" width="435" height="338">
+                        </div>
+                    </div>
+                    <div class="items wrap__1056">
+                        <img src="./img/merchants.png" alt="团长运营小程序，7天搞定500团" width="434" height="338"><div class="desc merchants">
+                        <h5>团长运营小程序，7天搞定500团</h5>
+                        <p>会员下单，团长收益立即可见，总部结算自由提现</p>
+                        <p>订单到货自动通知，一键取货快捷方便</p>
+                        <p>后台掌握团长运营动态，经营数据，销售排名清晰展现</p>
+                        <p>团长推荐裂变，佣金管理差异化，深度绑定，共赢未来</p>
+                        <div onclick="showForm()">免费试用</div>
+                    </div>
+                    </div>
+                    <div class="items gray">
+                        <div class="wrap__1056">
+                            <div class="desc dashboard">
+                                <h5>运营管理后台，助力精细化运营</h5>
+                                <p>商品经营多维度展示，销量排行、毛利报表、损益分析</p>
+                                <p>商品优劣一目了然，打造爆款产品收益更大化</p>
+                                <p>大数据分析科学选品，智能定价、即时营销、灵活售后</p>
+                                <p>精细化管控运营全流程，决策高效科学有依据</p>
+                                <div onclick="showForm()">免费试用</div>
+                            </div><img src="./img/dashboard.png" alt="运营管理后台，助力精细化运营" width="531" height="398">
+                        </div>
+                    </div>
+                    <div class="items ">
+                        <div class="wrap__1056">
+                            <div class="desc sys">
+                                <h5>供应链系统，掌握社区团购命脉</h5>
+                                <p>订单自动汇总，接入供应商系统，对接采购更便捷</p>
+                                <p>智能多元分拣模式，批量打印标签，库房作业更规范</p>
+                                <p>严谨出入库房，以销定采不压货，损耗管控更精细</p>
+                                <p>智能配送线路规划，批量发货降成本，企业运营更高效</p>
+                                <div onclick="showForm()">免费试用</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="groupon__case">
+                <h3 class="groupon__case--label">社区团购成功案例</h3>
+                <ul class="groupon__case--list clearfix">
+                    <li class="xcx">
+                        <a target="_blank" href="http://shengxian.sdongpo.com/shengxian6950.html">
+                            <img class="logo" src="./img/groupbuy__nfyp.png" alt="南方优品" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/nfyp_xcx.png" alt="南方优品" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a target="_blank" href="http://shengxian.sdongpo.com/shengxian6405.html">
+                            <img class="logo" src="./img/groupbuy__ydyx.png" alt="一点优选" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/ydyx_xcx.png" alt="一点优选" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a target="_blank" href="http://shengxian.sdongpo.com/shengxian6640.html">
+                            <img class="logo" src="./img/groupbuy__mgy.png" alt="芒果悦" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/mgy_xcx.png" alt="芒果悦" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a target="_blank" href="http://www.sdongpo.com/movee/case_fqt">
+                            <img class="logo" src="./img/groupbuy__fqt.png" alt="番茄团" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/fqt_xcx.png" alt="番茄团" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a target="_blank" href="http://www.sdongpo.com/movee/case_mx">
+                            <img class="logo" src="./img/groupbuy__mx.png" alt="觅选" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/mx_xcx.png" alt="觅选" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a>
+                            <img class="logo" src="./img/groupbuy__hsh.png" alt="荟生活" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/hsh_xcx.jpeg" alt="荟生活" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a target="_blank" href="http://www.sdongpo.com/movee/case_ydgg">
+                            <img class="logo" src="./img/groupbuy__ydgg.png" alt="云端的嘎嘎" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/ydgg_xcx.png" alt="云端的嘎嘎" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a target="_blank" href="http://www.sdongpo.com/movee/case_ygy">
+                            <img class="logo" src="./img/groupbuy__ygy.png" alt="优果悦团购" width="157" height="145">
+                            <img class="xcx__qrcode" src="./img/ygy_xcx.png" alt="优果悦团购" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a>
+                            <img class="logo" src="./img/groupbuy__xcxs.png" alt="乡村鲜生" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/xcxs_xcx.png" alt="乡村鲜生" width="180" height="180">
+                        </a>
+                    </li>
+                    <li class="xcx">
+                        <a>
+                            <img class="logo" src="./img/groupbuy__hzc.png" alt="海中城" width="144" height="144">
+                            <img class="xcx__qrcode" src="./img/hzc_xcx.png" alt="海中城" width="180" height="180">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 浮动窗口 -->
+    <div class="tool">
+        <div class="tool__items">
+            <img src="./img/weixin.png" alt="扫码咨询" width="28" height="23">
+            <p>扫码咨询</p>
+            <div class="tool__items--modal qrcode">
+                <img src="./img/qrcode_3.jpg" align="扫码添加客服" width="136" height="136">
+                <p>扫码添加客服</p>
+            </div>
+        </div>
+        <div class="tool__items">
+            <img src="./img/tel.png" alt="咨询热线" width="22" height="24">
+            <p>咨询热线</p>
+            <div class="tool__items--modal tel">
+                <p>售前咨询</p>
+                <p>
+                    (0755)85274941 </p>
+            </div>
+        </div>
+    </div>
+    <!-- 申请试用 -->
+    <div class="separator"></div>
+
+    <div class="a-center-middle-2 animated" id="submit-modal">
+        <i class="fa fa-times close"></i>
+        <form id="submit-form" action="http://sdongpo.com/groupbuy" method="post">
+            <input type="hidden" name="_csrf" value="RWJaZ3NjOVU/FCBeNAl8BRMOaQ4KFUEDCSVpVz0RVBI3UTQdRyhbHQ==">        <input type="hidden" name="product_type" value="团购">
+            <p id="submit-title">请填好信息我们会尽快联系您</p>
+            <div class="submit-item">
+                <p class="err-info">请输入您的姓名</p>
+                <label for="username">您的姓名:</label>
+                <input placeholder="请输入您的姓名" type="text" id="username" name="username" autocomplete="off">
+            </div>
+            <div class="submit-item submit-phone">
+                <p class="err-info">请输入11位手机号码</p>
+                <label for="phone">手机号码:</label>
+                <input placeholder="请输入您的手机号码" type="text" id="phone" name="phone" autocomplete="off">
+            </div>
+            <div class="submit-item">
+                <p class="err-info">请输入公司名称</p>
+                <label for="company-name">公司名称:</label>
+                <input type="text" placeholder="请输入您的公司名称" id="company-name" name="companyName" autocomplete="off">
+            </div>
+            <div class="submit">
+                <span id="submit-button">提交信息</span>
+            </div>
+        </form>    </div>
+
+    <div id="modal-wrap"></div>
+
+    <footer id="footFrameBox"><iframe src="./iframe/foot.html" class="footIframe" scrolling="no" frameborder="no" width="100%" height="418px;" style="vertical-align:top;"></iframe></footer>
+
+</div>
+
+<script>
+    //关闭试用窗口
+    $('.close').click(function() {
+        hideForm();
+    });
+    $("#bed").click(function() {
+        hideForm();
+    });
+    $("#modal-wrap").click(function() {
+        hideForm();
+    });
+
+    //申请试用
+    $("#try2").click(function(e) {  //联系我们页面申请试用
+        showForm();
+        e.stopPropagation();
+    });
+
+    $("#submit-modal").click(function(e) {
+        e.stopPropagation();
+    });
+
+    //提交申请试用信息
+    $("#submit-button").click(function() {
+        var key = '', data = $("#submit-form").serialize();
+
+        var username = '#username' + key,
+            phone = '#phone' + key,
+            company_name = '#company-name' + key
+
+        if($(username).val() == ''){
+            alert("请填写姓名");
+            $(username).addClass('err-bor');
+            $(username).siblings('.err-info').addClass('active-err');
+            $(username).siblings('.err-info').data('isErr', '1');
+            return false;
+        };
+
+        var regex = /^1\d{10}$/;
+
+        if(!regex.test($(phone).val())) {
+            alert("请输入正确的手机号码");
+            $(phone).addClass('err-bor');
+            $(phone).siblings('.err-info').addClass('active-err');
+            $(phone).siblings('.err-info').data('isErr', '1');
+            return;
+        }
+
+        if($(company_name).val() == ''){
+            alert("请填写公司名称");
+            $(company_name).addClass('err-bor');
+            $(company_name).siblings('.err-info').addClass('active-err');
+            $(company_name).siblings('.err-info').data('isErr', '1');
+            return false;
+        };
+
+        try{
+            $.post('/index/save',data,function( res ) {
+                if( res.status == 'success' ) {
+                    alert(res.message);
+                    hideForm();
+                }
+            },'json');
+        } catch(e) {
+            console.log(e);
+        }
+    });
+
+    //显示申请试用model
+    function showForm() {
+        var $modal = $("#submit-modal"),
+            $modalWrap = $("#modal-wrap");
+        $modal.removeClass("zoomOut");
+        $modal.addClass("zoomIn");
+        $modal.css("display","block");
+        $modalWrap.css('height',$("#wrapper").height()*1+80);
+        $modalWrap.show();
+    }
+
+    //隐藏申请试用model
+    function hideForm() {
+        var $modal = $("#submit-modal");
+        $modal.removeClass("zoomIn");
+        $modal.addClass("zoomOut");
+        $("#modal-wrap").hide();
+        $modal.css("display","none");
+
+        $("#username").val("");
+        $("#phone").val("");
+        $("#company-name").val("");
+
+        $("#username").removeClass('err-bor');
+        $("#username").siblings('.err-info').removeClass('active-err');
+        $("#username").siblings('.err-info').data('isErr', '0');
+
+        $("#phone").removeClass('err-bor');
+        $("#phone").siblings('.err-info').removeClass('active-err');
+        $("#phone").siblings('.err-info').data('isErr', '0');
+
+        $("#company-name").removeClass('err-bor');
+        $("#company-name").siblings('.err-info').removeClass('active-err');
+        $("#company-name").siblings('.err-info').data('isErr', '0');
+
+        $projectType = $("#product-type");
+        if ($projectType) {
+            $projectType.remove();
+        }
+    }
+
+    $(".menu-parent").mouseover(function() {
+        toggleSubmenu($(this).next('.sub-menu-wrap'));
+    });
+
+    $(".menu-parent").mouseleave(function() {
+        toggleSubmenu($(this).next('.sub-menu-wrap'), 'hide');
+    });
+
+    $(".sub-menu-wrap").mouseover(function() {
+        toggleSubmenu($(this));
+    });
+
+    $(".sub-menu-wrap").mouseleave(function() {
+        toggleSubmenu($(this), 'hide');
+    });
+
+
+    function toggleSubmenu($menuWrapObj, showType) {
+        if(showType == 'hide') {
+            $menuWrapObj.height(0);
+        }
+        else {
+            $menuWrapObj.height($menuWrapObj.find('.sub-menu').height());
+        }
+    }
+
+    $(function(){
+        var open_float_list = $('.open_float_list');
+        $("#wrapper,.Jhover").mouseover(function(){
+            open_float_list.removeClass('li_active');
+        });
+    })
+
+    //申请试用手机号码验证
+    $('#phone').on('input', function() {
+        var val = this.value;
+        var regex = /^1\d{10}$/;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(regex.test(val)) {
+            $(this).removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+
+    });
+
+    $('#phone').blur(function() {
+        var val = this.value;
+        var regex = /^1\d{10}$/;
+
+        if(!regex.test(val)) {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+
+    });
+
+    $('#username').blur(function() {
+        var val = this.value;
+        if(!val) {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+    });
+
+    $('#username').on('input', function() {
+        var val = this.value;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(val) {
+            $(this).removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+    });
+
+    $('#company-name').on('input', function() {
+        var val = this.value;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(val) {
+            $(this).removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+    });
+
+    $('#company-name').on('blur', function() {
+        var val = this.value;
+
+        if(!val) {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+    });
+
+</script>
+<script>
+
+</script>
+
+<script type="text/javascript">
+    /*
+    * add by onewan 取得百度推广的参数，并设置cookie
+    *
+    * */
+    var objCookie ={}; //cookie 对象
+    /*
+    * @author w3cschool
+    * @date 2017-06-27
+    * @desc 获得cookie值
+    * @param string c_name:key 值
+    * @return  get sucuess return value ,get false return ""
+    * */
+    objCookie.getCookie = function (c_name)
+    {
+        if (document.cookie.length>0)
+        {
+            c_start=document.cookie.indexOf(c_name + "=");
+            if (c_start!=-1)
+            {
+                c_start=c_start + c_name.length+1;
+                c_end=document.cookie.indexOf(";",c_start);
+                if (c_end == -1)
+                    c_end=document.cookie.length;
+                return decodeURIComponent(document.cookie.substring(c_start,c_end));
+            }
+        }
+        return "";
+    }
+    /*
+    * @author w3cshool
+    * @date 2017-06-27
+    * @desc 设置cookie值
+    * @param string c_name:key值 string value : value值  expriedays: int 过期天数
+    * */
+
+    objCookie.setCookie = function(c_name,value,expiredays)
+    {
+        var exdate=new Date();
+        exdate.setDate(exdate.getDate()+expiredays);
+        document.cookie=c_name+ "=" +decodeURIComponent(value)+
+            ((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+    }
+
+    /*
+     * 获得url参数
+     * @author add by onewan
+     * @date 2016-09-21
+     * @param url key值
+     * @return 成功返回 value值，失败返回null
+     * */
+
+    //获得url参数函数
+    objCookie.getUrlParam = function(name)
+    {
+        //构造一个含有目标参数的正则表达式对象
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        //匹配目标参数
+        var r = window.location.search.substr(1).match(reg);
+        //返回参数值
+        if ( r!=null )
+            return decodeURIComponent(r[2]);
+        return null;
+    }
+
+    $(document).ready(function() {
+        var e_keywordid = objCookie.getUrlParam('e_keywordid');
+
+        /*
+        * 当未有值时
+        * */
+        if( null != e_keywordid )
+        {
+            objCookie.setCookie( 'from_baidu_url', window.location.href );
+
+        }
+
+    });
+</script>
+
+<!-- 网站分析 -->
+<script type="text/javascript">
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', 'b24ee436eec344e5']);
+        (function() {
+            var vds = document.createElement('script');
+            vds.type='text/javascript';
+            vds.async = true;
+            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+</script>
+
+<!-- edit by chen -->
+<script type="text/javascript">
+    $(function() {
+        // 导航条逐渐变色和高度
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $('.header').addClass('active')
+            }
+            else {
+                $('.header').removeClass('active')
+            }
+        })
+
+        // 导航栏内容快跟随鼠标滚动
+
+        var path = location.pathname.split('/')[1];
+        $(".header__menu li").removeClass('active');
+        $(".header__menu li[data-target='"+path+"']").addClass('active');
+
+        function handleInitMenu(speed) {
+            $(".gl").stop();
+            var target = $(".header__menu .active")
+            var hover_awidth = target.innerWidth();
+            var hover_aleft = target.position().left;
+
+            $(".gl").animate({
+                left: hover_aleft + 24 + "px",
+                width: hover_awidth - 48 + "px"
+            }, speed);
+        }
+
+        handleInitMenu(0);
+
+        $(".header__menu li").each(function() {
+            var hover_a = $(this);
+            var hover_awidth = $(this).innerWidth();
+            var hover_aleft = hover_a.position().left;
+            // $(this).find('a').addClass('active')
+            // 滑进
+            $(this).mouseover(function() {
+                $(".gl").stop();
+                hover_awidth = $(this).innerWidth();
+                $(".gl").animate({
+                    left: hover_aleft + 24 + "px",
+                    width: hover_awidth - 48 + "px"
+                }, 350);
+            })
+            // 滑出
+            $(this).mouseout(function() {
+                handleInitMenu(350);
+            })
+        })
+
+        //footer iframe
+        var iHtml = '<iframe src="/iframe/foot.html" class="footIframe" scrolling="no" frameborder=no width="100%" height="418px;" style="vertical-align:top;"></iframe>';
+
+        //点击回到顶部
+        // $('.backTop').click(function() {
+        //     $('html, body').animate({ scrollTop: 0 }, 'fast');
+        // });
+
+        //添加foot
+        $('#footFrameBox').html(iHtml);
+
+        $('#logo').click(function() {
+            location.href = '/';
+            sessionStorage.removeItem('_target');
+        });
+    });
+</script>
+
+<script src="./js/yii.js"></script>
+<script src="./js/yii.activeForm.js"></script>
+<script type="text/javascript">    $(document).ready(function() {
+});
+</script>
+<script type="text/javascript">jQuery(document).ready(function () {
+    jQuery('#submit-form').yiiActiveForm([], []);
+});</script>
+
+</body></html>

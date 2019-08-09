@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://sdongpo.com/processing -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.sdongpo.com/processing">
+    <meta name="mobile-agent" content="format=html5;url=//m.sdongpo.com/processing">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="MTc3U3AwQURLQU1qN1oEFGdbBDoJRjkSfXAEYz5CLANDBFkpRHsjDA==">
+    <title>小方格-中央厨房系统,中央厨房软件,中央厨房管理系统,中央厨房管理软件</title>
+    <meta name="description" content="小方格中央厨房系统是专业用于中央厨房,净菜配送,加工品配送,食材配送,中央厨房等配送企业的进销存净菜管理软件系统">
+    <meta name="keywords" content="中央厨房管理系统,中央厨房怎么做,中央厨房模式是什么,净菜配送,半成品净菜,净菜配送公司,配送净菜,净菜配送app,净菜配送怎么做,净菜配送有前景吗,净菜配送成功案例,净菜配送中心,净菜的app,净菜配送企业,家庭净菜配送">
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script charset="utf-8" src="./js/lxb.js"></script>
+    <script type="text/javascript" async="" src="./js/vds.js"></script>
+    <script src="./js/hm.js"></script>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link href="./css/index.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        //获取浏览器版本
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
+        var IEbb = true;
+        if (isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            var fIEVersion = parseFloat(RegExp["$1"]);
+            if(fIEVersion < 9) {
+                IEbb = false;
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div class="header">
+    <div>
+        <a class="header__logo" href="http://xfigo.com/"><img src="./img/logo.png" alt="小方格" width="86" height="28"></a>
+        <div class="header__menu">
+            <ul>
+                <div class="gl" style="overflow: hidden; left: 350px; width: 56px;"></div>
+                <li data-target="" class="active"><a href="./index.html">首页</a></li>
+                <li data-target="shicai"><a href="./eshop.html">商城系统</a></li>
+                <li data-target="groupbuy"><a href="./groupbuy.html">社区团购</a></li>
+                <li data-target="processing"><a href="./dispatch.html">订单调度</a></li>
+                <li data-target="movee"><a href="./vipsystem.html">会员系统</a></li>
+                <li data-target="shengxian"><a href="./miniweb.html">微网站</a></li>
+<!--                <li data-target="agency"><a href="./agency.html">软件代理</a></li>-->
+                <li data-target="about"><a href="./contact.html">我们</a></li>
+            </ul>
+        </div>
+        <div class="header__concat"><a onclick="showForm()" href="javascript:;">免费试用</a></div>
+    </div>
+</div>
+
+<div id="wrapper">
+    <div>
+        <div class="processing">
+            <div class="banner">
+                <div class="banner__img processing">
+                    <div class="banner__img--text">
+                        <h1 class="caption processing">小方格中央厨房系统</h1>
+                        <h3 class="subtitle processing">- 让中央厨房加工配送更高效 -</h3>
+                        <button class="trial processing" onclick="showForm()">免费试用</button>
+                    </div>
+                </div>
+            </div>
+            <div class="processing__icon">
+                <p class="processing__icon--label">中央厨房，千亿级空白蓝海市场</p>
+                <ul class="clearfix">
+                    <li>
+                        <img src="./img/processing__jcys.png" alt="净菜优势" width="92" height="92">
+                        <p class="title">央厨优势</p>
+                        <p class="subtitle">净菜保鲜期长, 易储存</p>
+                        <p class="subtitle">开袋即用, 减少人力成本</p>
+                        <p class="subtitle">更多餐饮企业的选择</p>
+                    </li>
+                    <li>
+                        <img src="./img/processing__scgx.png" alt="市场刚需" width="92" height="92">
+                        <p class="title">市场刚需</p>
+                        <p class="subtitle">城市人力、租金上涨</p>
+                        <p class="subtitle">四万亿市场释放净菜红利</p>
+                        <p class="subtitle">更多企业生存发展需要</p>
+                    </li>
+                    <li>
+                        <img src="./img/processing__zcfc.png" alt="政策支持" width="92" height="92">
+                        <p class="title">政策支持</p>
+                        <p class="subtitle">环保资源循环利用</p>
+                        <p class="subtitle">城市环境治理，产业扶贫</p>
+                        <p class="subtitle">实现可持续发展</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="processing__intro">
+                <p class="processing__intro--label">中央厨房净菜加工行业现状</p>
+                <ul class="clearfix">
+                    <li>
+                        <img src="./img/processing__shg.png" alt="损耗高" width="272" height="144">
+                        <p class="title">损耗高</p>
+                        <p class="subtitle">客户需求多, 原料计算复杂</p>
+                    </li>
+                    <li>
+                        <img src="./img/processing__xld.png" alt="效率低" width="272" height="144">
+                        <p class="title">效率低</p>
+                        <p class="subtitle">加工无管控, 生产难规划, 交付不准时</p>
+                    </li>
+                    <li>
+                        <img src="./img/processing__kcl.png" alt="库存乱" width="272" height="144">
+                        <p class="title">库存乱</p>
+                        <p class="subtitle">生产加工, 库存变化, 人工统计难</p>
+                    </li>
+                    <li>
+                        <img src="./img/processing__djn.png" alt="定价难" width="272" height="144">
+                        <p class="title">定价难</p>
+                        <p class="subtitle">人力成本高, 数据有误差, 盈利不清晰</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="processing__section">
+                <p class="processing__section--title">小方格中央厨房系统</p>
+                <p class="processing__section--subtitle">助力企业解决行业痛点，降低50%运营成本，更好更快发展</p>
+                <div class="processing__section--items">
+                    <div class="wrap clearfix">
+                        <div class="desc">
+                            <p>一键计算采购清单</p>
+                            <p>系统根据客户下单需求，进行原料反算，自动生成原料采购清单</p>
+                            <p>支持按加工品实际出成率采购，原料损耗降低100%, 采购更科学</p>
+                            <div onclick="showForm()">免费试用</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="processing__section--items">
+                    <div class="wrap clearfix">
+                        <img src="./img/processing__gxgl.png" alt="高效管理中央厨房" width="488" height="336">
+                        <div class="desc">
+                            <p>高效管理中央厨房</p>
+                            <p>任务驱动责任到人，更少出错，效率翻倍</p>
+                            <p>生产加工过程可控、可溯源、确保食品安全</p>
+                            <p>加工进度清晰，按时交货，提高客户满意度</p>
+                            <div onclick="showForm()">免费试用</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="processing__section--items">
+                    <div class="wrap clearfix">
+                        <div class="desc">
+                            <p>库存精准化管理</p>
+                            <p>支持采购入库、生产加工、分拣出库到库存管理无缝对接</p>
+                            <p>原料、半成品、成品分别建档、双库存管理，数据一目了然</p>
+                            <p>领料、完工入库、退料均有审核流程，确保操作数据的准确性</p>
+                            <div onclick="showForm()">免费试用</div>
+                        </div>
+                        <img src="./img/processing__jzh.png" alt="库存精准化管理" width="478" height="324">
+                    </div>
+                </div>
+                <div class="processing__section--items animateProcessing">
+                    <div class="wrap clearfix">
+                        <div class="barChart">
+                            <div data-height="51px" style="height: 51px; overflow: visible;"></div>
+                            <div data-height="108px" style="height: 108px; overflow: visible;"></div>
+                            <div data-height="70px" style="height: 70px; overflow: visible;"></div>
+                            <div data-height="94px" style="height: 94px; overflow: visible;"></div>
+                            <div data-height="116px" style="height: 116px; overflow: visible;"></div>
+                            <div data-height="133px" style="height: 133px; overflow: visible;"></div>
+                        </div>
+                        <img src="./img/processing__dn.png" alt="精细化的数据统计" width="608" height="303">
+                        <div class="desc">
+                            <p>精细化的数据统计</p>
+                            <p>自动统计投入物料的成本, 完工后自动核算成本单价</p>
+                            <p>详细统计加工商品成本及构成数据, 商品定价更准确, 盈利更清晰</p>
+                            <div onclick="showForm()">免费试用</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="processing__customer">
+                <p class="processing__customer--label">工匠精神，更多客户信赖</p>
+                <ul class="clearfix">
+                    <li>
+                        <a href="http://sdongpo.com/processing">
+                            <img src="./img/processing__aasx.png" alt="艾艾生鲜" width="116" height="84">
+                            <p>艾艾生鲜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://sdongpo.com/processing">
+                            <img src="./img/processing__jrsd.png" alt="今日送达" width="116" height="84">
+                            <p>今日送达</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.sdongpo.com/movee/casemcb" target="_blank">
+                            <img src="./img/processing__mcb.png" alt="麦菜邦" width="153" height="66">
+                            <p>麦菜邦</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://sdongpo.com/processing">
+                            <img src="./img/processing__qxrt.png" alt="七香农投" width="80" height="72">
+                            <p>七香农投</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://shengxian.sdongpo.com/shengxian5390.html" target="_blank">
+                            <img src="./img/processing__xxy.png" alt="鲜湘缘" width="80" height="81">
+                            <p>鲜湘缘</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://shengxian.sdongpo.com/shengxian5603.html" target="_blank">
+                            <img src="./img/processing__zrsx.png" alt="中瑞生鲜" width="80" height="78">
+                            <p>中瑞生鲜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://shengxian.sdongpo.com/shengxian5102.html" target="_blank">
+                            <img src="./img/processing__cjmh.png" alt="超级米禾" width="116" height="84">
+                            <p>超级米禾</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://shengxian.sdongpo.com/shengxian6300.html" target="_blank">
+                            <img src="./img/processing__bsc.png" alt="拼食材" width="80" height="72">
+                            <p>拼食材</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $(window).scroll(function () {
+                    var a, b, c, d;
+                    d = $('.animateProcessing').offset().top;
+                    a = eval(d + 300);
+                    b = $(window).scrollTop();
+                    c = $(window).height();
+                    if (b + c > a) {
+                        $('.animateProcessing .barChart div').each(function(){
+                            $(this).css({ 'height': $(this).attr('data-height'), 'overflow': 'visible' })
+                        });
+                    }
+                });
+            })
+        </script>
+    </div>
+
+
+    <!-- 浮动窗口 -->
+    <div class="tool">
+        <div class="tool__items">
+            <img src="./img/weixin.png" alt="扫码咨询" width="28" height="23">
+            <p>扫码咨询</p>
+            <div class="tool__items--modal qrcode">
+                <img src="./img/qrcode_3.jpg" align="扫码添加客服" width="136" height="136">
+                <p>扫码添加客服</p>
+            </div>
+        </div>
+        <div class="tool__items">
+            <img src="./img/tel.png" alt="咨询热线" width="22" height="24">
+            <p>咨询热线</p>
+            <div class="tool__items--modal tel">
+                <p>售前咨询</p>
+                <p>
+                    (0755)85274941 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 申请试用 -->
+    <div class="separator"></div>
+
+    <div class="a-center-middle-2 animated" id="submit-modal">
+        <i class="fa fa-times close"></i>
+        <form id="submit-form" action="http://sdongpo.com/processing" method="post">
+            <input type="hidden" name="_csrf" value="MTc3U3AwQURLQU1qN1oEFGdbBDoJRjkSfXAEYz5CLANDBFkpRHsjDA==">                    <input type="hidden" name="product_type" value="央厨">
+            <p id="submit-title">请填好信息我们会尽快联系您</p>
+            <div class="submit-item">
+                <p class="err-info">请输入您的姓名</p>
+                <label for="username">您的姓名:</label>
+                <input placeholder="请输入您的姓名" type="text" id="username" name="username" autocomplete="off">
+            </div>
+            <div class="submit-item submit-phone">
+                <p class="err-info">请输入11位手机号码</p>
+                <label for="phone">手机号码:</label>
+                <input placeholder="请输入您的手机号码" type="text" id="phone" name="phone" autocomplete="off">
+            </div>
+            <div class="submit-item">
+                <p class="err-info">请输入公司名称</p>
+                <label for="company-name">公司名称:</label>
+                <input type="text" placeholder="请输入您的公司名称" id="company-name" name="companyName" autocomplete="off">
+            </div>
+            <div class="submit">
+                <span id="submit-button">提交信息</span>
+            </div>
+        </form>    </div>
+
+    <div id="modal-wrap"></div>
+    <footer id="footFrameBox"><iframe src="./iframe/foot.html" class="footIframe" scrolling="no" frameborder="no" width="100%" height="418px;" style="vertical-align:top;"></iframe></footer>
+
+</div>
+<script>
+    //关闭试用窗口
+    $('.close').click(function() {
+        hideForm();
+    });
+    $("#bed").click(function() {
+        hideForm();
+    });
+    $("#modal-wrap").click(function() {
+        hideForm();
+    });
+
+    //申请试用
+    $("#try2").click(function(e) {  //联系我们页面申请试用
+        showForm();
+        e.stopPropagation();
+    });
+
+    $("#submit-modal").click(function(e) {
+        e.stopPropagation();
+    });
+
+    //提交申请试用信息
+    $("#submit-button").click(function() {
+        var key = '', data = $("#submit-form").serialize();
+
+        var username = '#username' + key,
+            phone = '#phone' + key,
+            company_name = '#company-name' + key
+
+        if($(username).val() == ''){
+            alert("请填写姓名");
+            $(username).addClass('err-bor');
+            $(username).siblings('.err-info').addClass('active-err');
+            $(username).siblings('.err-info').data('isErr', '1');
+            return false;
+        };
+
+        var regex = /^1\d{10}$/;
+
+        if(!regex.test($(phone).val())) {
+            alert("请输入正确的手机号码");
+            $(phone).addClass('err-bor');
+            $(phone).siblings('.err-info').addClass('active-err');
+            $(phone).siblings('.err-info').data('isErr', '1');
+            return;
+        }
+
+        if($(company_name).val() == ''){
+            alert("请填写公司名称");
+            $(company_name).addClass('err-bor');
+            $(company_name).siblings('.err-info').addClass('active-err');
+            $(company_name).siblings('.err-info').data('isErr', '1');
+            return false;
+        };
+
+        try{
+            $.post('/index/save',data,function( res ) {
+                if( res.status == 'success' ) {
+                    alert(res.message);
+                    hideForm();
+                }
+            },'json');
+        } catch(e) {
+            console.log(e);
+        }
+    });
+
+    //显示申请试用model
+    function showForm() {
+        var $modal = $("#submit-modal"),
+            $modalWrap = $("#modal-wrap");
+        $modal.removeClass("zoomOut");
+        $modal.addClass("zoomIn");
+        $modal.css("display","block");
+        $modalWrap.css('height',$("#wrapper").height()*1+80);
+        $modalWrap.show();
+    }
+
+    //隐藏申请试用model
+    function hideForm() {
+        var $modal = $("#submit-modal");
+        $modal.removeClass("zoomIn");
+        $modal.addClass("zoomOut");
+        $("#modal-wrap").hide();
+        $modal.css("display","none");
+
+        $("#username").val("");
+        $("#phone").val("");
+        $("#company-name").val("");
+
+        $("#username").removeClass('err-bor');
+        $("#username").siblings('.err-info').removeClass('active-err');
+        $("#username").siblings('.err-info').data('isErr', '0');
+
+        $("#phone").removeClass('err-bor');
+        $("#phone").siblings('.err-info').removeClass('active-err');
+        $("#phone").siblings('.err-info').data('isErr', '0');
+
+        $("#company-name").removeClass('err-bor');
+        $("#company-name").siblings('.err-info').removeClass('active-err');
+        $("#company-name").siblings('.err-info').data('isErr', '0');
+
+        $projectType = $("#product-type");
+        if ($projectType) {
+            $projectType.remove();
+        }
+    }
+
+    $(".menu-parent").mouseover(function() {
+        toggleSubmenu($(this).next('.sub-menu-wrap'));
+    });
+
+    $(".menu-parent").mouseleave(function() {
+        toggleSubmenu($(this).next('.sub-menu-wrap'), 'hide');
+    });
+
+    $(".sub-menu-wrap").mouseover(function() {
+        toggleSubmenu($(this));
+    });
+
+    $(".sub-menu-wrap").mouseleave(function() {
+        toggleSubmenu($(this), 'hide');
+    });
+
+
+    function toggleSubmenu($menuWrapObj, showType) {
+        if(showType == 'hide') {
+            $menuWrapObj.height(0);
+        }
+        else {
+            $menuWrapObj.height($menuWrapObj.find('.sub-menu').height());
+        }
+    }
+
+    $(function(){
+        var open_float_list = $('.open_float_list');
+        $("#wrapper,.Jhover").mouseover(function(){
+            open_float_list.removeClass('li_active');
+        });
+    })
+
+    //申请试用手机号码验证
+    $('#phone').on('input', function() {
+        var val = this.value;
+        var regex = /^1\d{10}$/;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(regex.test(val)) {
+            $(this).removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+
+    });
+
+    $('#phone').blur(function() {
+        var val = this.value;
+        var regex = /^1\d{10}$/;
+
+        if(!regex.test(val)) {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+
+    });
+
+    $('#username').blur(function() {
+        var val = this.value;
+        if(!val) {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+    });
+
+    $('#username').on('input', function() {
+        var val = this.value;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(val) {
+            $(this).removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+    });
+
+    $('#company-name').on('input', function() {
+        var val = this.value;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(val) {
+            $(this).removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+    });
+
+    $('#company-name').on('blur', function() {
+        var val = this.value;
+
+        if(!val) {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+    });
+
+</script>
+<script>
+
+</script>
+
+<script type="text/javascript">
+    /*
+    * add by onewan 取得百度推广的参数，并设置cookie
+    *
+    * */
+    var objCookie ={}; //cookie 对象
+    /*
+    * @author w3cschool
+    * @date 2017-06-27
+    * @desc 获得cookie值
+    * @param string c_name:key 值
+    * @return  get sucuess return value ,get false return ""
+    * */
+    objCookie.getCookie = function (c_name)
+    {
+        if (document.cookie.length>0)
+        {
+            c_start=document.cookie.indexOf(c_name + "=");
+            if (c_start!=-1)
+            {
+                c_start=c_start + c_name.length+1;
+                c_end=document.cookie.indexOf(";",c_start);
+                if (c_end == -1)
+                    c_end=document.cookie.length;
+                return decodeURIComponent(document.cookie.substring(c_start,c_end));
+            }
+        }
+        return "";
+    }
+    /*
+    * @author w3cshool
+    * @date 2017-06-27
+    * @desc 设置cookie值
+    * @param string c_name:key值 string value : value值  expriedays: int 过期天数
+    * */
+
+    objCookie.setCookie = function(c_name,value,expiredays)
+    {
+        var exdate=new Date();
+        exdate.setDate(exdate.getDate()+expiredays);
+        document.cookie=c_name+ "=" +decodeURIComponent(value)+
+            ((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+    }
+
+    /*
+     * 获得url参数
+     * @author add by onewan
+     * @date 2016-09-21
+     * @param url key值
+     * @return 成功返回 value值，失败返回null
+     * */
+
+    //获得url参数函数
+    objCookie.getUrlParam = function(name)
+    {
+        //构造一个含有目标参数的正则表达式对象
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        //匹配目标参数
+        var r = window.location.search.substr(1).match(reg);
+        //返回参数值
+        if ( r!=null )
+            return decodeURIComponent(r[2]);
+        return null;
+    }
+
+    $(document).ready(function() {
+        var e_keywordid = objCookie.getUrlParam('e_keywordid');
+
+        /*
+        * 当未有值时
+        * */
+        if( null != e_keywordid )
+        {
+            objCookie.setCookie( 'from_baidu_url', window.location.href );
+
+        }
+
+    });
+</script>
+
+<!-- 网站分析 -->
+<script type="text/javascript">
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', 'b24ee436eec344e5']);
+        (function() {
+            var vds = document.createElement('script');
+            vds.type='text/javascript';
+            vds.async = true;
+            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+</script>
+
+<!-- edit by chen -->
+<script type="text/javascript">
+    $(function() {
+        //footer iframe
+        var iHtml = '<iframe src="./iframe/foot.html" class="footIframe" scrolling="no" frameborder=no width="100%" height="418px;" style="vertical-align:top;"></iframe>';
+
+        //点击回到顶部
+        // $('.backTop').click(function() {
+        //     $('html, body').animate({ scrollTop: 0 }, 'fast');
+        // });
+
+        //添加foot
+        $('#footFrameBox').html(iHtml);
+
+        $('#logo').click(function() {
+            location.href = '/';
+            sessionStorage.removeItem('_target');
+        });
+
+        // 导航条逐渐变色和高度
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $('.header').addClass('active')
+            }
+            else {
+                $('.header').removeClass('active')
+            }
+        })
+
+        // 成功案例页面切换 tabs
+        $('.case__tabs--list .items').click(function(){
+            $(this).addClass('active').siblings().removeClass('active')
+            $('.case__tabs--content .items').eq($(this).index()).fadeIn().siblings().fadeOut()
+            $('.case__classicCase--list').eq($(this).index()).fadeIn().siblings('.case__classicCase--list').fadeOut()
+        })
+
+        // 导航栏内容快跟随鼠标滚动
+
+        var path = location.pathname.split('/')[1];
+        $(".header__menu li").removeClass('active');
+        $(".header__menu li[data-target='"+path+"']").addClass('active');
+
+        function handleInitMenu(speed) {
+            $(".gl").stop();
+            var target = $(".header__menu .active")
+            var hover_awidth = target.innerWidth();
+            var hover_aleft = target.position().left;
+
+            $(".gl").animate({
+                left: hover_aleft + 24 + "px",
+                width: hover_awidth - 48 + "px"
+            }, speed);
+        }
+
+        handleInitMenu(0);
+
+        $(".header__menu li").each(function() {
+            var hover_a = $(this);
+            var hover_awidth = $(this).innerWidth();
+            var hover_aleft = hover_a.position().left;
+            // $(this).find('a').addClass('active')
+            // 滑进
+            $(this).mouseover(function() {
+                $(".gl").stop();
+                hover_awidth = $(this).innerWidth();
+                $(".gl").animate({
+                    left: hover_aleft + 24 + "px",
+                    width: hover_awidth - 48 + "px"
+                }, 350);
+            })
+            // 滑出
+            $(this).mouseout(function() {
+                handleInitMenu(350);
+            })
+        })
+
+        // 播放 video
+        var video = document.getElementById('tvideo');
+
+        $(".video").click(function(event) {
+            if (!video.currentTime) {
+                $('.video .bg').toggleClass('active')
+                $('.play').hide()
+            }
+            if (video.paused) {
+                video.play();
+            }
+            else {
+                video.pause();
+            }
+            event.stopPropagation();
+            return false;
+        });
+    });
+</script>
+
+<script src="./js/yii.js"></script>
+<script src="./js/yii.activeForm.js"></script>
+<script type="text/javascript">    $(document).ready(function() {
+    // var _target = sessionStorage.getItem('_target');
+
+    // $("#nav li,.float_list li").removeClass('active');
+    // if( _target ) {
+    //     $("#nav li[data-target='"+_target+"']").addClass('active');
+    //     $(".float_list li[data-target='"+_target+"']").addClass('active');
+    // }
+    // else {
+    //     $("#nav li[data-target='index']").addClass('active');
+    // }
+
+    // $("#nav li,.float_list li,.title-item ").click(function() {
+    //     var _target = $(this).attr('data-target');
+    //     sessionStorage.setItem('_target', _target);
+    // });
+
+    // var path = location.pathname.split('/')[1];
+    // // $("#nav li,.float_list li").removeClass('active');
+    // // $("#nav li[data-target='"+path+"']").addClass('active');
+    // $(".header__menu li").removeClass('active');
+    // $(".header__menu li[data-target='"+path+"']").addClass('active');
+});
+</script>
+<script type="text/javascript">jQuery(document).ready(function () {
+    jQuery('#submit-form').yiiActiveForm([], []);
+});</script>
+
+</body></html>
