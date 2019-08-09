@@ -1,0 +1,62 @@
+/**
+* footer样式
+* by didi
+*/
+
+#footer {
+	@fixed();
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: @white-color;
+    z-index: 1030;
+    padding: 2px 0;
+    .home {
+    	@fly-left();
+	    width: 15%;
+	    height: 100%;
+	    span {
+	    	@text-c();
+	    	@display-block();
+	    	width: 100%;
+		    padding: 0 15%;
+		    color: #30BC73;
+		    font-size: 12px;
+		    img {
+		    	width: 20px;
+			    height: 20px;
+			    margin-bottom: 2px;
+		    }
+	    }
+	}
+	.tel {
+		@fly-left();
+		@text-c();
+		width: 40%;
+	    background-color: #F7BC00;
+	    color: @white-color;
+	    height: 40px;
+	    line-height: 40px;
+	    font-size: 14px;
+	    border-radius: 3px;
+	    img {
+	    	width: 20px;
+    		height: 20px;
+    		vertical-align: middle;
+	    }
+	}
+	.open_modal {
+		@fly-left();
+		@text-c();
+	    width: 40%;
+	    background-color: #ff8708;
+	    color: @white-color;
+	    height: 40px;
+	    line-height: 40px;
+	    font-size: 16px;
+	    border-radius: 3px;
+	    margin-left: 3%;
+	    letter-spacing: 2px;
+	}
+}
+

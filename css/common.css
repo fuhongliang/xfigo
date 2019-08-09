@@ -1,0 +1,189 @@
+#group-buy {
+    background: #f7f7f7
+}
+
+#group-buy .how-big {
+    background: #f7f7f7;
+    padding-bottom: 70px
+}
+
+#group-buy .how-big .product {
+    width: 1200px;
+    margin: 70px auto 0
+}
+
+#group-buy .how-big .product .cont .img {
+    float: left
+}
+
+#group-buy .how-big .product .cont .text {
+    float: left;
+    font-size: 18px
+}
+
+#group-buy .how-big .product .cont .text .try-btn {
+    color: #fff;
+    margin: 0;
+    background: #0c5;
+    margin-top: 30px;
+    position: static;
+    padding: 0;
+    width: 206px;
+    height: 64px;
+    line-height: 64px;
+    border: none;
+    font-size: 28px;
+    border-radius: 100px;
+    outline: 0;
+    top: 170px;
+    left: 50%
+}
+
+#group-buy .how-big .product .cont .text > h2 {
+    margin-bottom: 20px
+}
+
+#group-buy .how-big .product .cont .text > p {
+    color: #666;
+    position: relative;
+    line-height: 2;
+    padding-left: 20px
+}
+
+#group-buy .how-big .product .cont .text > p:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #268efd;
+    border-radius: 50%
+}
+
+#group-buy .how-big .product .cont .item-left {
+    float: left;
+    width: 48%;
+    margin-right: 4%
+}
+
+#group-buy .how-big .product .cont .item-right {
+    float: left;
+    width: 48%
+}
+
+#group-buy .how-big .product .foot-icon {
+    padding-top: 30px
+}
+
+#group-buy .forte {
+    background: #fff
+}
+
+#group-buy .forte .title {
+    padding-top: 40px
+}
+
+#group-buy .forte .goodbox > div {
+    padding-top: 0
+}
+
+#group-buy .nav .banner {
+    padding-top: 80px;
+    background: url(https://sitecdn.sdongpo.com/website/groupbuy/190326banner.png?v=1.0.4) no-repeat center center;
+    background-size: 100% 560px
+}
+
+#group-buy .nav .banner .try-btn {
+    top: 343px;
+    background: #FFAC23;
+    border-radius: 39px;
+    color: #fff;
+    margin: 0;
+    width: 194px;
+    font-size: 26px;
+    height: 52px;
+    line-height: 52px;
+    margin-left: -97px
+}
+
+#group-buy .nav .banner .banner-title {
+    padding-top: 40px
+}
+
+#group-buy .nav .banner .banner-title .big-tit {
+    font-family: PingFangSC-Medium;
+    font-size: 76px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    line-height: 80px
+}
+
+#group-buy .nav .banner .banner-title .son-tit {
+    font-family: PingFangSC-Regular;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-top: 25px
+}
+
+.movee a:hover {
+    text-decoration: none !important
+}
+
+.movee .ci-tab {
+    margin-bottom: 15px
+}
+
+.movee .ci-tab a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #999;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    line-height: 35px
+}
+
+.movee .ci-tab .first {
+    margin-right: 80px
+}
+
+.movee .ci-tab .active {
+    color: #00a000;
+    border-color: #00a000
+}
+
+.movee .groupcase {
+    display: none
+}
+
+.movee .groupcase .case-item .left {
+    position: relative
+}
+
+.movee .groupcase .case-item .left .erimg {
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none
+}
+
+.movee .groupcase .case-item .left .erimg img {
+    height: 157px;
+    width: 157px
+}
+
+.movee .groupcase .case-item .left:hover .erimg {
+    display: block
+}
+
+.title .split_line {
+    margin-bottom: 50px !important
+}
+
+/*# sourceMappingURL=common.css.map */

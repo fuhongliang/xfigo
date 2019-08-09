@@ -1,0 +1,243 @@
+@import 'custom';
+@import 'header';
+@import 'footer';
+//首页
+@import 'index';
+//生鲜配送
+@import 'shucai';
+//社区团购
+@import 'groupbuy';
+//成功案例
+@import 'succase';
+//关于我们
+@import 'about';
+//联系我们
+@import 'contact';
+//渠道代理
+@import 'agency';
+
+/**
+* common
+* 所有页面通用样式
+*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #494949 !important;
+}
+
+body,
+div,
+table,
+td,
+tr,
+th {
+    font-family: "Microsoft Yahei", Verdana, Arial, Helvetica, sans-serif
+}
+
+div,
+p,
+form,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+
+body>div {
+    margin-right: auto;
+    margin-left: auto
+}
+
+input,
+select,
+textarea {
+    @vm();
+}
+
+input {
+    padding-top: 0
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none
+}
+
+textarea {
+    resize: none
+}
+
+input[type=button] {
+    -webkit-appearance: none;
+    outline: none
+}
+
+ul {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+    color: #494949;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.fr {
+    @fly-right();
+}
+
+.fl {
+    @fly-left();
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.pr {
+    @relative();
+}
+
+.tc {
+    @text-c();
+}
+
+.b {
+    font-weight: bold;
+}
+
+.cf {
+    color: @white-color;
+}
+
+.module-title {
+    .mt-one {
+        font-size: 0.55rem;
+        line-height: 1.6;
+    }
+    .mt-two {
+        font-size: 0.4rem;
+        line-height: 1.6;
+    }
+    .mt-thr {
+        font-size: 0.35rem;
+        line-height: 1.5;
+    }
+    .line {
+        width: 1.8rem;
+        height: 2px;
+        background: #2b90ed;
+        margin: 0 auto;
+        margin-top: 0.3rem;
+    }
+}
+
+/**
+* form modal
+*/
+.modal {
+    .modal-title {
+        height: 0.9375rem;
+        color: #5ca831;
+        font-size: 0.16rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        img {
+            @vm();
+            height: 0.9375rem;
+            width: 2.979rem;
+        }
+    }
+    .modal-body {
+        .banner_title {
+            @text-c();
+            font-size: 0.18rem;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            img {
+                width: 70% !important;
+            }
+        }
+        .banner_con {
+            @text-c();
+            font-size: 0.46875rem;
+            color: #24a828;
+            margin-top: 8px;
+        }
+        .form {
+            margin-top: 0.46875rem;
+            .input-form {
+                @relative();
+                .err-text {
+                    @absolute();
+                    @display-none();
+                    font-size: 12px;
+                    color: red;
+                    bottom: -0.5rem;
+                    padding-left: 12px;
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                }
+                .active-err {
+                    @display-block();
+                    opacity: 1;
+                }
+                .form-control {
+                    margin-bottom: 0.78125rem;
+                }
+                .errColor {
+                    border-color: red;
+                    &:focus {
+                        border-color: red;
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 180, 0, .6);
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 180, 0, .6);
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        @text-c();
+        padding: 10px;
+        button {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}

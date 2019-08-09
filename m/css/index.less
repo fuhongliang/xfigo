@@ -1,0 +1,109 @@
+#index {
+	padding-top: 50px;
+    padding-bottom: 45px;
+    .banner {
+    	@relative();
+    	img {
+    		width: 100%;
+    	}
+    	.banner-btn {
+    		@absolute();
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    opacity: 0;
+		    -moz-opacity: 0;
+		    -khtml-opacity: 0;
+    	}
+    }
+    .content {
+    	@text-c();
+    	color: #333;
+    	margin-top: 15px;
+    	.solu {
+    		padding: 0 15px;
+    		.tit {
+    			@b();
+    			font-size: 18px;
+    			line-height: 50px;
+    		}
+    		.son-tit {
+				@text-l();
+			    font-size: 14px;
+			    line-height: 1.6;
+    		}
+    		.det_btn {
+    			outline: none;
+			    border: none;
+			    background-color: transparent;
+			    border-bottom: 2px solid #5f5f5f;
+			    margin: 20px 0;
+    		}
+    	}
+    	.adv {
+    		padding-top: 25px;
+		    color: @white-color;
+		    background-color: #2C87ED;
+		    .tit {
+		    	@b();
+		    	@text-c();
+		    	font-size: 18px;
+			    line-height: 30px;
+		    }
+		    .son_tit {
+		    	@text-c();
+		    	font-size: 14px;
+			    margin-bottom: 20px;
+		    }
+		    .adv-slide {
+		    	padding: 0 15px 20px 15px;
+		    	.adv-out {
+		    		@oh();
+		    		.custom-pagination {
+		    			margin-bottom: 20px;
+		    			.swiper-pagination-bullet {
+		    				width: 21%;
+		    				margin: 0 2%;
+		    				font-size: 12px !important;
+						    height: 26px !important;
+						    color: @white-color !important;
+						    border-radius: 30px !important;
+						    line-height: 24px !important;
+						    opacity: 1 !important;
+						    padding: 0 !important;
+						    background-color: transparent !important;
+						    border: 1px solid #fff !important;
+		    			}
+		    			.swiper-pagination-bullet-active {
+		    				color: #2b90ed !important;
+    						background-color: #fff !important;
+		    			}
+		    		}
+		    	}
+		    }
+    	}
+    	.case {
+    		.tit {
+			    font-size: 18px;
+			    line-height: 50px;
+			}
+			.case-box {
+				font-size: 0;
+    			padding: 0 15px;
+			}
+			.try_btn {
+			    color: #e20000;
+			    background-color: #FED900;
+			    font-size: 14px;
+			    height: 30px;
+			    margin: 20px 0;
+			    padding: 0 20px;
+			    line-height: 30px;
+			    outline: none;
+			    border-radius: 40px;
+			    border: none;
+			}
+    	}
+    }
+}

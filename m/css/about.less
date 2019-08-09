@@ -1,0 +1,113 @@
+#about {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background: #f6f6f6;
+  .about_banner {
+    @relative();
+    @oh();
+    h1 {
+      @absolute();
+      @text-c();
+      left: 0px;
+      top: 12vw;
+      color: @white-color;
+      width: 100%;
+      span {
+        @display-inb();
+        font-size: 9vw;
+        margin-bottom: 5vw;
+      }
+      p {
+        font-size: 6vw;
+        width: 100%;
+      }
+    }
+  }
+  .about_company {
+    padding: 3.5vw;
+    margin-top: 3vw;
+    background: @white-color;
+    h3 {
+      @text-c();
+      margin-top: 3vw;
+      margin-bottom: 7vw;
+      font-size: 6.5vw;
+      color: #000;
+    }
+    p {
+      font-size: 4vw;
+      margin: 3vw 0;
+      line-height: 1.6;
+      color: #5e5e5e;
+    }
+  }
+  .about_corporate {
+    padding: 3.5vw;
+    margin-top: 3vw;
+    background: @white-color;
+    h3 {
+      @text-c();
+      margin-top: 3vw;
+      margin-bottom: 7vw;
+      font-size: 6.5vw;
+      color: #000;
+    }
+    dd {
+      margin-bottom: 6vw;
+      img {
+        @fly-left();
+        width: 40%;
+        border-radius: 4px;
+      }
+      p {
+        @fly-right();
+        padding-left: 3vw;
+        font-size: 4vw;
+        width: 60%;
+        line-height: 1.6;
+        color: #5e5e5e;
+      }
+    }
+  }
+  .about_media {
+    padding: 3.5vw;
+    margin-top: 3vw;
+    background: @white-color;
+    h3 {
+      @text-c();
+      margin-top: 3vw;
+      margin-bottom: 7vw;
+      font-size: 6.5vw;
+      color: #000;
+
+    }
+    dd {
+      margin-bottom: 6vw;
+      img {
+        @fly-left();
+        width: 40%;
+        border-radius: 4px;
+      }
+      a {
+        @fly-right();
+        padding-left: 3vw;
+        margin-top: -1vw;
+        width: 60%;
+        p {
+          font-size: 4vw;
+          line-height: 1.6;
+          color: #000;
+        }
+        button {
+          padding: 1px 6px;
+          font-size: 13px;
+          margin-top: 1.5vw;
+          color: red;
+          border-radius: 2px;
+          border: 1px solid red;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

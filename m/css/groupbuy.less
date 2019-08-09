@@ -1,0 +1,146 @@
+#groupbuy {
+	padding-top: 50px;
+    padding-bottom: 50px;
+    .banner {
+    	@relative();
+    	.banner-text {
+    		@absolute();
+    		@text-c();
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			padding-top: 0.9rem;
+			h2 {
+				color: @white-color;
+				font-size: 0.78rem;
+			}
+			p {
+				color: @white-color;
+			    font-size: .37rem;
+			    margin-top: .2rem;
+			}
+			.nav-btn {
+			    width: 4.3rem;
+			    height: 1.386rem;
+			    border: none;
+			    outline: 0;
+			    background: #ff8708;
+			    border-radius: 4px;
+			    font-size: .5rem;
+			    color: #fff;
+			    margin-top: .5rem;
+			}
+		}
+		.banner-bg {
+			width: 100%;
+			height: 5rem;
+			img {
+				height: 100%;
+			}
+		}
+    }
+    .special {
+      padding-top: .8rem;
+      padding-bottom: 0.5rem;
+    	.spc-wrap {
+			margin-top: 0.5rem;
+			.spc-item {
+				@fly-left();
+			    width: 33.3333%;
+			    padding: 0 .15rem;
+			    .spc-bg {
+			    	@display-inb();
+				    width: 1.5625rem;
+				    height: 1.5625rem;
+				    background: url('//sitecdn.sdongpo.com/wap/groupbuy/spec_pic.jpg?v=1.0.0') no-repeat;
+				    background-size: auto 1.5625rem;
+			    }
+			    .spc-bg.bg1 {
+					background-position: -1.5625rem 0;
+				}
+				.spc-bg.bg2 {
+					background-position: 1px 0;
+				}
+				.spc-bg.bg3 {
+					background-position: -3.125rem 0;
+				}
+				p {
+					font-size: .3rem;
+				    line-height: 1.5;
+				    margin-top: .2rem;
+				}
+			}
+		}
+    }
+    .to-big {
+    	padding-top: .8rem;
+      padding-bottom: .6rem;
+      background-color: #f4f4f4;
+    	.mt-one {
+        font-size: 0.5rem;
+      }
+    	.tb-outer {
+        margin-top: 0.5rem;
+        padding: 0 0.3rem;
+        >div {
+          margin-bottom: 0.8rem;
+        }
+        .tb-img {
+          // @fly-left();
+          margin: 0 auto;
+          width: 75%;
+        }
+        .tb-desc {
+          // @fly-left();
+          @text-c();
+          // padding-left: 0.3rem;
+          h3 {
+            color: #333;
+            font-size: 0.5rem;
+            font-weight: bold;
+            margin-bottom: 0.2rem;
+          }
+          p {
+            color: #666;
+            font-size: 0.42rem;
+            line-height: 1.5;
+            // &:before {
+            //   content: '·';
+            //   font-weight: bold;
+            //   color: #999;
+            //   margin-right: 0.13rem;
+            // }
+          }
+        }
+        .top-pad {
+          padding-top: 0.4rem;
+        }
+      }
+		
+      
+    }
+    .low-key {
+    	background: #2a90ed;
+    	padding: .5rem;
+    }
+    .partner {
+    	padding-top: .8rem;
+    	padding-bottom: .6rem;
+    	.pt-wrap {
+    		padding-left: .5rem;
+		    padding-right: .5rem;
+		    margin-top: .5rem;
+    	}
+    }
+    .gb-try-btn {
+		padding: 0.12rem 2rem;
+		color: @white-color;
+	    background-color: #21bd63;
+	    font-size: 14px;
+	    line-height: 30px;
+	    outline: none;
+	    border-radius: 40px;
+	    border: none;
+	}
+}

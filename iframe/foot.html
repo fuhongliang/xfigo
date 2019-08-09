@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://sdongpo.com/iframe/foot -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <meta name="csrf-param" content="_csrf">-->
+<!--    <meta name="csrf-token" content="LXdrcUMyWDZXARFIBFgdZnsbWBg6RCBgYTBYQQ1ANXFfRAULd3k6fg==">-->
+    <title>小方格-专业做电商行业软件,社区团购软件-订单调度SaaS系统</title>
+    <meta name="description" content="小方格-专业做电商行业软件,社区团购软件-订单调度SaaS系统">
+    <meta name="keywords"
+          content="小方格生鲜电商ERP，订单配送软件，社区团购软件，外卖配送软件，水果订货配送管理软件，农产品配送软件, 生鲜配送, 蔬菜配送, 生鲜电商, 小方格, 电商APP 20个生意, 电商软件公司, 商场APP怎么做, 订单配送app平台, 农产品电商平台,  送菜上门app, 菜篮子, 社区团购">
+
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="../css/style(1).css">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/main.min.css" rel="stylesheet">
+<link href="../css/index.min.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet"></head>
+<body>
+    <div class="footer">
+        <div>
+            <div class="footer__form">
+                <div class="label"><img src="../img/trial.png" alt="免费使用软件" width="24" height="24">免费试用软件</div>
+                <form id="submit-index" action="http://sdongpo.com/iframe/foot" method="post">
+<input type="hidden" name="_csrf" value="LXdrcUMyWDZXARFIBFgdZnsbWBg6RCBgYTBYQQ1ANXFfRAULd3k6fg==">                    <div class="footer__form--items">
+                        <input type="text" name="username" class="footInputName" placeholder="请输入您的姓名" autocomplete="off">
+                    </div>
+                    <div class="footer__form--items">
+                        <input type="text" name="phone" class="footInputPhone" placeholder="请输入您的联系电话" autocomplete="off">
+                    </div>
+                    <div class="footer__form--items">
+                        <input type="text" name="companyName" class="footCompanyName" placeholder="请输入您的公司名称" autocomplete="off">
+                    </div>
+                    <div class="footer__form--submit" id="submit-button-index">提交信息</div>
+                </form>            </div>
+            <div class="footer__concat">
+                <div class="label"><img src="../img/concat.png" alt="联系我们" width="22" height="23">联系我们</div>
+                <p>如有任何疑问请联系我们，我们7*24小时竭诚为您服务</p>
+                <p class="tel">0755-85274941</p>
+                <p>深圳团队：深圳市宝安区新安三路28号海关大厦16楼</p>
+                <p>广州团队：广东广州天河建中路5号海天楼19层</p>
+                <p>南非团队：119 President Building,St Andrew Street </p>
+                <p>9301 Bloemfontein,South Africa</p>
+            </div>
+            <div class="footer__qrcode">
+                <img src="../img/qrcode.jpeg" alt="扫码关注小方格" width="128" height="128">
+                <p>扫码关注小方格</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="margin-bottom: 10px;">深圳市红树枝科技有限公司为企业提供商城 SAAS + 订单配送调度系统、社区团购系统.</p>
+            <p>深圳市红树枝科技有限公司(©2019 粤ICP备14021337号-2)</p>
+        </div>
+    </div>
+<script type="text/javascript">
+    /**
+     * 底部提交信息
+     */
+    $("#submit-button-index").click(function() {
+        var data = $("#submit-index").serialize();
+        if($(".footInputName").val() == ''){
+            alert("请填写姓名"); return false;
+        };
+
+        var regex = /^1\d{10}$/;
+
+        if(!regex.test($(".footInputPhone").val())) {
+            alert("手机号码有误，请重填");
+            return false;
+        }
+
+        if($(".footCompanyName").val() == ''){
+            alert("请填写公司名称"); return false;
+        };
+
+        try{
+            $.post('/index/save',data,function( res ) {
+                // console.log( res );
+                if( res.status == 'success' ) {
+                    alert(res.message);
+                    $(".footInputName").val('');
+                    $(".footInputPhone").val('');
+                    $(".footCompanyName").val('');
+                    hideForm();
+                }
+            },'json');
+        } catch(e) {
+            console.log(e);
+        }
+
+    });
+
+    $('.footInputPhone').on('input', function() {
+        var val = this.value;
+        var regex = /^1\d{10}$/;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(regex.test(val)) {
+            $(this).removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+    });
+
+    $('.footInputPhone').blur(function() {
+        var val = this.value;
+        var regex = /^1\d{10}$/;
+
+        if(!regex.test(val)) {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+    });
+
+    $('.footInputName').on('input', function() {
+        var val = this.value;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(val) {
+            $(this).removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+    });
+
+    $('.footInputName').blur(function() {
+        var val = this.value;
+        if(!val) {
+            $(this).addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+    });
+
+    $('.footCompanyName').on('input', function() {
+        var val = this.value;
+
+        if($(this).siblings('.err-info').data('isErr') != 1) {
+            return;
+        }
+
+        if(val) {
+            $(this).parent().removeClass('err-bor');
+            $(this).siblings('.err-info').removeClass('active-err');
+        } else {
+            $(this).parent().addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+        }
+    });
+
+    $('.footCompanyName').blur(function() {
+        var val = this.value;
+
+        if(!val) {
+           $(this).parent().addClass('err-bor');
+            $(this).siblings('.err-info').addClass('active-err');
+            $(this).siblings('.err-info').data('isErr', '1');
+        }
+    });
+</script>
+
+<script src="../js/yii.js"></script>
+<script src="../js/yii.activeForm.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#submit-index').yiiActiveForm([], []);
+});</script>
+
+</body></html>
