@@ -433,14 +433,14 @@ $(function() {
                 } else {
                     if ($('.modal__alert')[0]) {
                         setTimeout(function(){
-                            // window.location.href = "https://m.sdongpo.com";
+                            // window.location.href = "https://m.xfigo.com";
                             // location.reload()
                             $('#submit-form')[0].reset()
                             $('#handle-submit-form')[0] && $('#handle-submit-form')[0].reset()
                         }, 2000)
                     }
                     else {
-                        // window.location.href = "https://m.sdongpo.com";
+                        // window.location.href = "https://m.xfigo.com";
                         // location.reload()
                         $('#submit-form')[0].reset()
                         $('#handle-submit-form')[0] && $('#handle-submit-form')[0].reset()

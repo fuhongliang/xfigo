@@ -1,7 +1,7 @@
 // (function () {
 //     var h = {}, mt = {}, c = {
 //         id: "5fa4f2fc5624f544affb211eab296f46",
-//         dm: ["sdongpo.com", "m-sdongpo-com-2aa4.aipage.cn", "wap.qudengshan.cn", "qudengshan.cn"],
+//         dm: ["xfigo.com", "m-xfigo-com-2aa4.aipage.cn", "wap.qudengshan.cn", "qudengshan.cn"],
 //         js: "tongji.baidu.com/hm-web/js/",
 //         etrk: [],
 //         cetrk: [],

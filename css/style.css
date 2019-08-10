@@ -382,24 +382,26 @@ input::-webkit-search-cancel-button {
   height: 524px;
 }
 .banner__img.index {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/topbanner_home_2560.png') no-repeat center center;
+  background: url('../img/banner_home.png') no-repeat center center;
 }
 .banner__img.fresh {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/topbanner_fresh_2560.jpg') no-repeat center center;
+  background: url('../img/banner_home.png') no-repeat center center;
 }
 .banner__img.groupon {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/topbanner_groupbuy_2560.jpg') no-repeat center center;
+  background: url('../img/banner_home.png') no-repeat center center;
 }
 .banner__img.us {
-  /* background: url('https://sitecdn.sdongpo.com/website/new_case/topbanner_us_2560_1.jpg') no-repeat center center; */
-  background: url('https://sitecdn.sdongpo.com/website/agency/banner.jpg?v=1.0.0') no-repeat center center;
-  height: 400px;
+  background: url('../img/banner_home.png') no-repeat center center;
+  /*background: url('https://sitecdn.xfigo.com/website/agency/banner.jpg?v=1.0.0') no-repeat center center;*/
+  /*height: 400px;*/
 }
 .banner__img.case {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/topbanner_case_2560.jpg') no-repeat center center;
+  background: url('../img/banner_home.png') no-repeat center center;
+  /*background: url('https://sitecdn.xfigo.com/website/new_case/topbanner_case_2560.jpg') no-repeat center center;*/
 }
 .banner__img.processing {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/topbanner_clean_vegetable.jpg') no-repeat center center;
+  background: url('../img/banner_home.png') no-repeat center center;
+  /*background: url('https://sitecdn.xfigo.com/website/new_case/topbanner_clean_vegetable.jpg') no-repeat center center;*/
 }
 .banner__img--text {
   position: relative;
@@ -525,7 +527,7 @@ input::-webkit-search-cancel-button {
   margin-top: 20px;
 }
 .index__vedio {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/bg_deafult.png') no-repeat center 109px;
+  background: url('https://sitecdn.xfigo.com/website/new_case/bg_deafult.png') no-repeat center 109px;
   background-size: 1920px 648px;
   height: 757px;
 }
@@ -565,7 +567,7 @@ input::-webkit-search-cancel-button {
   width: 694px;
   height: 436px;
   /* margin-left: -1px; */
-  background: url('https://sitecdn.sdongpo.com/website/new_case/about_us_pic.png') no-repeat center;
+  background: url('https://sitecdn.xfigo.com/website/new_case/about_us_pic.png') no-repeat center;
   background-size: 695px 349px;
 }
 .index__vedio--play .bg.active{
@@ -718,11 +720,11 @@ input::-webkit-search-cancel-button {
   width: 100%;
 }
 .index__introduce--list .items .big__img.fresh {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/pic_fresh.png') no-repeat center;
+  background: url('../img/pic_dispath.png') no-repeat center;
   background-size: 503px 249px;
 }
 .index__introduce--list .items .big__img.groupbuy {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/pic_groupbuy.png') no-repeat center;
+  background: url('../img/pic_groupbuy.png') no-repeat center;
   background-size: 503px 249px;
 }
 .index__introduce--list .items .title {
@@ -787,13 +789,13 @@ input::-webkit-search-cancel-button {
   background-size: 294px 116px;
 }
 .index__news--list .items .big__img.industry {
-  background-image: url('https://sitecdn.sdongpo.com/website/new_case/industryDynamic.png');
+  background-image: url('https://sitecdn.xfigo.com/website/new_case/industryDynamic.png');
 }
 .index__news--list .items .big__img.pro {
-  background-image: url('https://sitecdn.sdongpo.com/website/new_case/productsNews.png');
+  background-image: url('https://sitecdn.xfigo.com/website/new_case/productsNews.png');
 }
 .index__news--list .items .big__img.activity {
-  background-image: url('https://sitecdn.sdongpo.com/website/new_case/latestActivity.png');
+  background-image: url('https://sitecdn.xfigo.com/website/new_case/latestActivity.png');
 }
 .index__news--list .items .big__img p {
   padding-left: 18px;
@@ -1128,7 +1130,7 @@ input::-webkit-search-cancel-button {
   padding-top: 84px;
 }
 .groupon__section .items:nth-child(4) {
-  background-image: url('https://sitecdn.sdongpo.com/website/new_case/sys__1.png');
+  background-image: url('https://sitecdn.xfigo.com/website/new_case/sys__1.png');
   background-size: 1504px 392px;
   background-repeat: no-repeat;
   background-position: center 40px;
@@ -1386,7 +1388,7 @@ input::-webkit-search-cancel-button {
   margin-top: 100px;
   width: 304px;
   height: 378px;
-  background-image: url('https://sitecdn.sdongpo.com/website/new_case/bg_code.png');
+  background-image: url('https://sitecdn.xfigo.com/website/new_case/bg_code.png');
   background-size: 304px 378px;
   background-repeat: no-repeat;
   box-shadow: 2px 4px 14px 0px rgba(69, 69, 124, 0.1);
@@ -1469,7 +1471,7 @@ input::-webkit-search-cancel-button {
 .us__form {
   text-align: center;
   padding-bottom: 100px;
-  background: url('https://sitecdn.sdongpo.com/website/new_case/bg_deafult_about_us.png') no-repeat center 30px;
+  background: url('https://sitecdn.xfigo.com/website/new_case/bg_deafult_about_us.png') no-repeat center 30px;
   background-size: 1019px 477px;
 }
 .us__form--caption {
@@ -1530,7 +1532,7 @@ input::-webkit-search-cancel-button {
   cursor: pointer;
 }
 .us__vedio {
-  background: url('https://sitecdn.sdongpo.com/website/new_case/abput_sdp.png') no-repeat center 120px #fff;
+  background: url('https://sitecdn.xfigo.com/website/new_case/abput_sdp.png') no-repeat center 120px #fff;
   background-size: 1920px 648px;
   height: 868px;
   background-color: rgba(245, 246, 249, 0.8);
@@ -1571,7 +1573,7 @@ input::-webkit-search-cancel-button {
   width: 694px;
   height: 436px;
   /* margin-left: -1px; */
-  background: url('https://sitecdn.sdongpo.com/website/new_case/about_us_pic.png') no-repeat center;
+  background: url('https://sitecdn.xfigo.com/website/new_case/about_us_pic.png') no-repeat center;
   background-size: 695px 349px;
 }
 .us__vedio--play .bg.active{
@@ -1583,7 +1585,7 @@ input::-webkit-search-cancel-button {
 }
 .case__vedio {
   padding-top: 40px;
-  background: url('https://sitecdn.sdongpo.com/website/new_case/case__video__bg__1.png') no-repeat center 40px;
+  background: url('https://sitecdn.xfigo.com/website/new_case/case__video__bg__1.png') no-repeat center 40px;
   background-size: 1369px 653px;
   /* height: 739px; */
   height: 660px;
@@ -1636,7 +1638,7 @@ input::-webkit-search-cancel-button {
   /* height: 436px; */
   height: 396px;
   /* margin-left: 1px; */
-  background: url('https://sitecdn.sdongpo.com/website/new_case/case__video__1.png') no-repeat center;
+  background: url('https://sitecdn.xfigo.com/website/new_case/case__video__1.png') no-repeat center;
   background-size: 695px 396px;
 }
 .case__vedio--play .bg.active {
@@ -1963,7 +1965,7 @@ input::-webkit-search-cancel-button {
 }
 .processing__section--items:nth-child(3) .wrap {
   height: 412px;
-  background: url('https://sitecdn.sdongpo.com/website/new_case/processing__js.png') no-repeat center;
+  background: url('https://sitecdn.xfigo.com/website/new_case/processing__js.png') no-repeat center;
   background-size: 1148px 412px;
 }
 .processing__section--items:nth-child(3) .desc {

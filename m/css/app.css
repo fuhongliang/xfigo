@@ -8320,7 +8320,7 @@ button.swiper-pagination-bullet {
     display: inline-block;
     width: 1.5625rem;
     height: 1.5625rem;
-    background: url('//sitecdn.sdongpo.com/wap/groupbuy/spec_pic.jpg?v=1.0.0') no-repeat;
+    background: url('//sitecdn.xfigo.com/wap/groupbuy/spec_pic.jpg?v=1.0.0') no-repeat;
     background-size: auto 1.5625rem
 }
 
@@ -9150,15 +9150,15 @@ input::-webkit-search-cancel-button, input::-webkit-search-decoration {
 }
 
 .bannerNew.grouponBanner {
-    background-image: url(//sitecdn.sdongpo.com/wap/example/groupon__banner__v2.png)
+    background-image: url(//sitecdn.xfigo.com/wap/example/groupon__banner__v2.png)
 }
 
 .bannerNew.freshBanner {
-    background-image: url(//sitecdn.sdongpo.com/wap/example/fresh_banner__v2.png)
+    background-image: url(//sitecdn.xfigo.com/wap/example/fresh_banner__v2.png)
 }
 
 .bannerNew.processingBanner {
-    background-image: url(//sitecdn.sdongpo.com/wap/example/processing__banner.png)
+    background-image: url(//sitecdn.xfigo.com/wap/example/processing__banner.png)
 }
 
 .bannerNew--caption {
