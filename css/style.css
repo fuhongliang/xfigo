@@ -1852,13 +1852,13 @@ input::-webkit-search-cancel-button {
   text-align: center;
 }
 .processing__icon ul {
-  width: 980px;
+  width: 1148px;
   margin: 0 auto;
 }
 .processing__icon ul li {
   float: left;
-  margin-right: 160px;
-  width: 220px;
+  margin-right: 20px;
+  width: 272px;
   text-align: center;
 }
 .processing__icon ul li:last-child {
