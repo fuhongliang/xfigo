@@ -382,17 +382,17 @@ input::-webkit-search-cancel-button {
   height: 524px;
 }
 .banner__img.index {
-  background: url('../img/banner_home.png') no-repeat center center;
+  background: url('../img/banner_home.jpg') no-repeat center center;
 }
 .banner__img.fresh {
-  background: url('../img/banner_home.png') no-repeat center center;
+  background: url('../img/banner_home.jpg') no-repeat center center;
 }
 .banner__img.groupon {
-  background: url('../img/banner_groupon.png') no-repeat center center;
+  background: url('../img/banner_groupon.jpg') no-repeat center center;
 }
 
 .banner__img.dispath {
-  background: url('../img/banner_dispath.png') no-repeat center center;
+  background: url('../img/banner_dispath.jpg') no-repeat center center;
 }
 
 .banner__img.us {
