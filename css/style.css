@@ -388,10 +388,15 @@ input::-webkit-search-cancel-button {
   background: url('../img/banner_home.png') no-repeat center center;
 }
 .banner__img.groupon {
-  background: url('../img/banner_home.png') no-repeat center center;
+  background: url('../img/banner_groupon.png') no-repeat center center;
 }
+
+.banner__img.dispath {
+  background: url('../img/banner_dispath.png') no-repeat center center;
+}
+
 .banner__img.us {
-  background: url('../img/banner_home.png') no-repeat center center;
+  background: url('../img/home_banner_me.png') no-repeat center center;
   /*background: url('https://sitecdn.xfigo.com/website/agency/banner.jpg?v=1.0.0') no-repeat center center;*/
   /*height: 400px;*/
 }
@@ -403,6 +408,12 @@ input::-webkit-search-cancel-button {
   background: url('../img/banner_home.png') no-repeat center center;
   /*background: url('https://sitecdn.xfigo.com/website/new_case/topbanner_clean_vegetable.jpg') no-repeat center center;*/
 }
+
+.banner__img.eshop {
+  background: url('../img/banner_eshop.png') no-repeat center center;
+  /*background: url('https://sitecdn.xfigo.com/website/new_case/topbanner_clean_vegetable.jpg') no-repeat center center;*/
+}
+
 .banner__img--text {
   position: relative;
   padding-top: 167px;
@@ -903,7 +914,7 @@ input::-webkit-search-cancel-button {
   /* margin-left: -10px; */
 }
 .fresh__introduce--list .items:nth-child(3) {
-  padding-top: 84px;
+  padding-top: 32px;
   height: 496px;
   box-sizing: border-box;
 }
@@ -1130,7 +1141,7 @@ input::-webkit-search-cancel-button {
   padding-top: 84px;
 }
 .groupon__section .items:nth-child(4) {
-  background-image: url('https://sitecdn.xfigo.com/website/new_case/sys__1.png');
+  /*background-image: url('../img/mall_shangjia.png');*/
   background-size: 1504px 392px;
   background-repeat: no-repeat;
   background-position: center 40px;
@@ -1182,7 +1193,7 @@ input::-webkit-search-cancel-button {
 .groupon__section .items .desc.sys {
   padding-top: 100px;
   /* margin-left: 694px; */
-  margin-left: 610px;
+  margin-left: 210px;
 }
 .groupon__section .items .desc h5 {
   font-size: 24px;
@@ -1217,6 +1228,7 @@ input::-webkit-search-cancel-button {
 }
 .groupon__section .items img:first-child {
   margin-left: 16px;
+  margin-top: 16px;
 }
 .groupon__case {
   padding-bottom: 64px;
@@ -1959,24 +1971,40 @@ input::-webkit-search-cancel-button {
   text-align: center;
   margin-bottom: -30px;
 }
+/*.processing__section--items:nth-child(3) {*/
+/*  background: #fff;*/
+/*  padding-bottom: 86px;*/
+/*}*/
+/*.processing__section--items:nth-child(3) .wrap {*/
+/*  height: 412px;*/
+/*  background: url('https://sitecdn.xfigo.com/website/new_case/processing__js.png') no-repeat center;*/
+/*  background-size: 1148px 412px;*/
+/*}*/
+/*.processing__section--items:nth-child(3) .desc {*/
+/*  width: 412px;*/
+/*  padding-top: 126px;*/
+/*  padding-left: 62px;*/
+/*}*/
+
 .processing__section--items:nth-child(3) {
   background: #fff;
-  padding-bottom: 86px;
+  height: 546px;
 }
 .processing__section--items:nth-child(3) .wrap {
-  height: 412px;
-  background: url('https://sitecdn.xfigo.com/website/new_case/processing__js.png') no-repeat center;
-  background-size: 1148px 412px;
+  padding-top: 112px;
 }
-.processing__section--items:nth-child(3) .desc {
-  width: 412px;
-  padding-top: 126px;
+.processing__section--items:nth-child(3) .wrap .desc {
+  padding-top: 28px;
   padding-left: 42px;
+  width: 414px;
+  margin-right: 166px;
 }
+
 .processing__section--items:nth-child(4) {
   background: rgba(245, 246, 249, 0.8);
   height: 486px;
 }
+
 .processing__section--items:nth-child(4) .wrap {
   padding-top: 78px;
 }
@@ -1987,6 +2015,7 @@ input::-webkit-search-cancel-button {
 .processing__section--items:nth-child(4) .wrap .desc {
   padding-top: 37px;
 }
+
 .processing__section--items:nth-child(5) {
   background: #fff;
   height: 546px;
@@ -2000,6 +2029,7 @@ input::-webkit-search-cancel-button {
   width: 414px;
   margin-right: 166px;
 }
+
 .processing__section--items:nth-child(6) {
   background: rgba(245, 246, 249, 0.8);
   height: 440px;
