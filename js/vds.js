@@ -1010,7 +1010,7 @@
                 return "undefined" == typeof this.impSetting() || null === this.impSetting() ? t._fetchServerSetting() : "false" === this.impSetting() || this.impSetting() === !1 ? window.vds.imp = !1 : void 0
             }, t._fetchServerSetting = function () {
                 var t;
-                return t = ("https:" === document.location.protocol ? "https://" : "http://") + ("tags.growingio.com/products/" + window.vds.accountId + "/web/" + window.location.hostname + "/settings/general"), a.sendRequest(t, function (t) {
+                return t = ("https:" === document.location.protocol ? "https://" : "http://") + ("tags.growingio.com/products/" + window.vds.accountId + "/wap/" + window.location.hostname + "/settings/general"), a.sendRequest(t, function (t) {
                     return function (t) {
                         var e;
                         return e = (null != t ? t.responseText : void 0) ? JSON.parse(t.responseText).imp : !0, n.set("gr_imp_" + a.hashCode(window.vds.accountId), e), window.vds.imp &= e, window.vds.imp ? void 0 : window._vds.push(["deregisterDomObserver"])
@@ -1130,10 +1130,10 @@
                 return this.scheme + this.host + t
             }, t.prototype.getUrlMap = function () {
                 var t, e;
-                return e = this.scheme + this.host, t = e + "/v2/" + this.properties.accountId + "/web", {
+                return e = this.scheme + this.host, t = e + "/v2/" + this.properties.accountId + "/wap", {
                     pv: t + "/pv",
                     action: t + "/action",
-                    cstm: e + "/custom/" + this.properties.accountId + "/web/events"
+                    cstm: e + "/custom/" + this.properties.accountId + "/wap/events"
                 }
             }, t.prototype.connect = function (t) {
                 var e, r, i, o;
