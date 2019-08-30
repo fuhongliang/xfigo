@@ -195,26 +195,11 @@
 
     <div class="a-center-middle-2 animated" id="submit-modal">
         <i class="fa fa-times close"></i>
-        <form id="submit-form" action="http://xfigo.com/" method="post">
-            <input type="hidden" name="_csrf" value="NlRBUWs0bGRMIjtoLF4pNGA4cjgSQhQyehNyYSVGASNEZy8rX38OLA==">
-            <p id="submit-title">请填好信息我们会尽快联系您</p>
-            <div class="submit-item">
-                <p class="err-info">请输入您的姓名</p>
-                <label for="username">您的姓名:</label>
-                <input placeholder="请输入您的姓名" type="text" id="username" name="username" autocomplete="off">
-            </div>
-            <div class="submit-item submit-phone">
-                <p class="err-info">请输入11位手机号码</p>
-                <label for="phone">手机号码:</label>
-                <input placeholder="请输入您的手机号码" type="text" id="phone" name="phone" autocomplete="off">
-            </div>
-            <div class="submit-item">
-                <p class="err-info">请输入公司名称</p>
-                <label for="company-name">公司名称:</label>
-                <input type="text" placeholder="请输入您的公司名称" id="company-name" name="companyName" autocomplete="off">
-            </div>
+        <form id="submit-form" action="http://xfigo.com/shicai" method="post">
+            <input type="hidden" name="_csrf" value="LkdKbjRORW1UMTBXcyQAPXgreQdNOD07YgB5Xno8KCpcdCQUAAUnJQ==">
+            <p id="submit-title">请点击右下角联系我们，第一时间回复您</p>
             <div class="submit">
-                <span id="submit-button">提交信息</span>
+                <span id="submit-button">确定</span>
             </div>
         </form>
     </div>
@@ -251,50 +236,7 @@
 
     //提交申请试用信息
     $("#submit-button").click(function () {
-        var key = '', data = $("#submit-form").serialize();
-
-        var username = '#username' + key,
-            phone = '#phone' + key,
-            company_name = '#company-name' + key
-
-        if ($(username).val() == '') {
-            alert("请填写姓名");
-            $(username).addClass('err-bor');
-            $(username).siblings('.err-info').addClass('active-err');
-            $(username).siblings('.err-info').data('isErr', '1');
-            return false;
-        }
-        ;
-
-        var regex = /^1\d{10}$/;
-
-        if (!regex.test($(phone).val())) {
-            alert("请输入正确的手机号码");
-            $(phone).addClass('err-bor');
-            $(phone).siblings('.err-info').addClass('active-err');
-            $(phone).siblings('.err-info').data('isErr', '1');
-            return;
-        }
-
-        if ($(company_name).val() == '') {
-            alert("请填写公司名称");
-            $(company_name).addClass('err-bor');
-            $(company_name).siblings('.err-info').addClass('active-err');
-            $(company_name).siblings('.err-info').data('isErr', '1');
-            return false;
-        }
-        ;
-
-        try {
-            $.post('/index/save', data, function (res) {
-                if (res.status == 'success') {
-                    alert(res.message);
-                    hideForm();
-                }
-            }, 'json');
-        } catch (e) {
-            console.log(e);
-        }
+        hideForm();
     });
 
     //显示申请试用model
@@ -548,6 +490,22 @@
     })();
 </script>
 
+
+<script type='text/javascript'>
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 163327);
+</script>
+
 <!-- edit by chen -->
 <script type="text/javascript">
     $(function () {
@@ -643,13 +601,18 @@
 </script>
 
 <script src="./js/yii.js"></script>
+
 <script src="./js/yii.activeForm.js"></script>
+
 <script type="text/javascript">    $(document).ready(function () {
 });
 </script>
+
 <script type="text/javascript">jQuery(document).ready(function () {
     jQuery('#submit-form').yiiActiveForm([], []);
-});</script>
+});
+
+</script>
 
 </body>
 </html>

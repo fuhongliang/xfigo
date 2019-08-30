@@ -1695,8 +1695,8 @@ header .float_list {
 }
 
 #submit-modal {
-    width: 500px;
-    height: 355px;
+    width: 280px;
+    height: 130px;
     margin-top: -175px;
     margin-left: -250px
 }
